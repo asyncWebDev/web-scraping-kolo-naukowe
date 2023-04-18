@@ -1,0 +1,54 @@
+:root {
+  --main-gray: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: var(--main-gray);
+}
+
+body {
+  background-color: #ffd166;
+  padding: 2.2rem;
+}
+
+.main-header {
+  margin-bottom: 5rem;
+}
+
+.region-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #073b4c;
+
+  padding: 1rem;
+  width: max-content;
+
+  margin-bottom: 3rem;
+  gap: 1.4rem;
+  position: relative;
+}
+
+.region-container h2 {
+  font-weight: 700;
+  border-bottom: 1px solid var(--main-gray);
+}
+
+.region-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.region-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
